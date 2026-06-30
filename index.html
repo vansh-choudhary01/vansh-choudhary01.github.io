@@ -17,8 +17,6 @@
       <a href="#work">Work</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
-      <a href="#principles">Principles</a>
-      <a href="#writing">Writing</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="topbar-actions">
@@ -152,25 +150,49 @@
             <div class="project-index">03</div>
             <div>
               <h3>DebugPilot</h3>
-              <p>An AI-powered observability platform that detects incidents, indexes repositories with vector search, and assists engineers with root-cause analysis.</p>
+              <p>An AI-powered observability platform that detects production incidents, retrieves service-aware code and historical failures, and generates asynchronous root-cause analysis through an event-driven architecture.</p>
+              <ul>
+                <li>Event-driven incident processing</li>
+                <li>Asynchronous BullMQ RCA workers</li>
+                <li>Repository-aware RAG pipeline</li>
+                <li>MongoDB Vector Search &amp; embeddings</li>
+                <li>Incident fingerprinting &amp; memory</li>
+                <li>Service metrics &amp; deployment correlation</li>
+              </ul>
             </div>
             <a href="https://github.com/vansh-choudhary01/DebugPilot-Incident-Intelligence-" target="_blank" rel="noreferrer">Repository</a>
           </article>
 
-          <article class="project-item compact">
+          <article class="project-item">
             <div class="project-index">04</div>
             <div>
               <h3>Pi Sandbox Kubernetes Runtime</h3>
-              <p>A secure execution runtime where every AI tool invocation executes inside an isolated Kubernetes sandbox with disposable environments.</p>
+              <p>A secure execution runtime that isolates every AI tool invocation inside disposable Kubernetes sandbox pods for safe, session-aware code execution.</p>
+              <ul>
+                <li>Kubernetes sandbox execution</li>
+                <li>Warm pod pool</li>
+                <li>Disposable execution environments</li>
+                <li>Filesystem isolation</li>
+                <li>Session-aware runtime</li>
+                <li>Secure tool execution</li>
+              </ul>
             </div>
             <a href="https://github.com/vansh-choudhary01/pi-sandbox-k8s" target="_blank" rel="noreferrer">Repository</a>
           </article>
 
-          <article class="project-item compact">
+          <article class="project-item">
             <div class="project-index">05</div>
             <div>
               <h3>RAG Optimization</h3>
-              <p>A modular retrieval pipeline implementing semantic chunking, adaptive chunking, embeddings, and vector search for Retrieval-Augmented Generation.</p>
+              <p>A modular Retrieval-Augmented Generation pipeline focused on improving retrieval quality through advanced chunking, embeddings, and query optimization.</p>
+              <ul>
+                <li>Semantic &amp; adaptive chunking</li>
+                <li>Query transformation</li>
+                <li>Embedding generation</li>
+                <li>Vector search</li>
+                <li>Retrieval evaluation</li>
+                <li>Modular RAG architecture</li>
+              </ul>
             </div>
             <a href="https://github.com/vansh-choudhary01/RAG-Optimization" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -216,81 +238,10 @@
       </div>
     </section>
 
-    <section class="folio-row" id="principles" aria-labelledby="principles-title">
-      <aside class="margin-note">04 / principles</aside>
-      <div class="content-column">
-        <p class="section-label">Engineering Principles</p>
-        <h2 id="principles-title">Engineering decisions matter more than implementation details.</h2>
-        <p>
-          Software becomes easier to scale when responsibilities are clearly separated, systems are observable,
-          and failures are expected rather than ignored.
-        </p>
-        <p>
-          The projects I build prioritize modular architecture, asynchronous communication, operational visibility,
-          and maintainable system boundaries over short-term implementation speed.
-        </p>
-        <div class="principles-grid">
-          <div>
-            <span class="mono-label">Modularity</span>
-            <p>Independent components with clear responsibilities.</p>
-          </div>
-          <div>
-            <span class="mono-label">Observability</span>
-            <p>Logs, metrics, and tracing should make failures understandable.</p>
-          </div>
-          <div>
-            <span class="mono-label">Reliability</span>
-            <p>Recovery mechanisms are as important as successful execution.</p>
-          </div>
-          <div>
-            <span class="mono-label">Scalability</span>
-            <p>Design systems that continue to perform as traffic and complexity grow.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="folio-row" id="philosophy" aria-labelledby="philosophy-title">
-      <aside class="margin-note">05 / notes</aside>
-      <div class="content-column">
-        <p class="section-label">Engineering Philosophy</p>
-        <h2 id="philosophy-title">Small composable components age better than tightly coupled architectures.</h2>
-        <blockquote>
-          The projects I build are grounded in real engineering challenges — AI agents, deployment platforms,
-          observability systems, and secure execution environments.
-        </blockquote>
-        <p>
-          Each project explores production architecture, scalability, reliability, and the trade-offs involved
-          in building systems that developers can depend on.
-        </p>
-      </div>
-    </section>
-
-    <section class="folio-row" id="writing" aria-labelledby="writing-title">
-      <aside class="margin-note">06 / writing</aside>
-      <div class="content-column">
-        <p class="section-label">Technical Writing</p>
-        <h2 id="writing-title">Notes from building production systems.</h2>
-        <p>Articles I plan to publish documenting architectures, implementation decisions, and engineering trade-offs.</p>
-        <ol class="writing-list">
-          <li>
-            <span>Building an AI Coding Agent</span>
-            <small>Autonomous execution, memory, tool orchestration</small>
-          </li>
-          <li>
-            <span>Designing Distributed Deployment Systems</span>
-            <small>Workers, queues, deployment pipelines</small>
-          </li>
-          <li>
-            <span>Building AI Observability Platforms</span>
-            <small>Incident detection, retrieval, root-cause analysis</small>
-          </li>
-        </ol>
-      </div>
-    </section>
 
     <section class="folio-row contact-row" id="contact" aria-labelledby="contact-title">
-      <aside class="margin-note">07 / contact</aside>
+      <aside class="margin-note">04 / contact</aside>
       <div class="content-column">
         <p class="section-label">Let's Build</p>
         <h2 id="contact-title">Interested in backend engineering opportunities focused on AI infrastructure, distributed systems, and developer platforms.</h2>
