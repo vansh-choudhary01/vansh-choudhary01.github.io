@@ -50,9 +50,6 @@ document.querySelector("[data-theme-toggle]").addEventListener("click", () => {
   localStorage.setItem("portfolio-theme", nextTheme);
 });
 
-document.querySelector("[data-print]").addEventListener("click", () => {
-  window.print();
-});
 
 const updateScrollProgress = () => {
   const scrollable = document.documentElement.scrollHeight - window.innerHeight;
