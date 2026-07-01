@@ -195,64 +195,28 @@ button {
 
 .portrait-lockup {
   display: grid;
-  grid-template-columns: 128px minmax(0, 1fr);
-  gap: 18px;
-  align-items: end;
-  width: min(100%, 520px);
-  margin-bottom: 46px;
+  grid-template-columns: 148px minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  width: min(100%, 560px);
+  margin-bottom: 42px;
   font-family: var(--mono);
   color: var(--muted);
   font-size: 11px;
   line-height: 1.55;
 }
 
-.portrait-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border: 1px solid var(--line);
-  background:
-    linear-gradient(135deg, transparent 48%, var(--faint) 49% 51%, transparent 52%),
-    var(--paper);
-}
-
-.portrait-grid span {
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  color: var(--ink);
-  font-size: 18px;
-  font-weight: 600;
-  flex-direction: column;
-  gap: 3px;
-  line-height: 1.2;
-}
-
-.portrait-grid span small {
+.profile-photo {
   display: block;
-  font-size: 7px;
-  font-weight: 400;
-  color: var(--muted);
-  font-family: var(--mono);
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  text-align: center;
-  line-height: 1.2;
-  max-width: 90%;
-  word-break: break-word;
-}
-
-.portrait-grid span:nth-child(2n) {
-  border-right: 0;
-}
-
-.portrait-grid span:nth-child(n + 3) {
-  border-bottom: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  background: var(--faint);
+  object-fit: cover;
 }
 
 .portrait-lockup p {
-  margin: 0 0 3px;
+  margin: 0;
 }
 
 .eyebrow,
@@ -637,11 +601,8 @@ dd {
   }
 
   .portrait-lockup {
-    grid-template-columns: 96px minmax(0, 1fr);
-  }
-
-  .portrait-grid span {
-    font-size: 14px;
+    grid-template-columns: 104px minmax(0, 1fr);
+    gap: 16px;
   }
 
   h1 {
