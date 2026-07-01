@@ -14,10 +14,10 @@
   <header class="topbar" aria-label="Primary navigation">
     <a class="brand-mark" href="#top" aria-label="Vansh Choudhary home">VC</a>
     <nav class="nav-links" aria-label="Page sections">
-      <a href="#work">Work</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
+      <a href="javascript:void(0)" data-target="work">Work</a>
+      <a href="javascript:void(0)" data-target="projects">Projects</a>
+      <a href="javascript:void(0)" data-target="skills">Skills</a>
+      <a href="javascript:void(0)" data-target="contact">Contact</a>
     </nav>
     <div class="topbar-actions">
       <button class="icon-button" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle theme">
@@ -44,7 +44,7 @@
         </div>
 
         <p class="eyebrow">Vansh Choudhary</p>
-        <h1 id="intro-title">Software Engineer building backend systems for AI infrastructure and distributed products.</h1>
+        <h1 id="intro-title">Building backend infrastructure for AI-powered and distributed systems.</h1>
         <p class="intro-copy">
           I'm Vansh Choudhary, a Software Engineer with 1 year of experience building production backend services,
           distributed systems, AI-powered developer tools, and real-time communication platforms.
@@ -75,7 +75,7 @@
       <aside class="margin-note">01 / work</aside>
       <div class="content-column">
         <p class="section-label">What I build</p>
-        <h2 id="work-title">Production infrastructure designed for reliability, scalability, and automation.</h2>
+        <h2 id="work-title">Backend platforms built for distributed systems, AI infrastructure, and production workloads.</h2>
         <div class="split-copy">
           <p>
             My work spans backend APIs, distributed services, deployment platforms, AI agents, observability systems,
@@ -89,16 +89,16 @@
 
         <div class="experience-rule">
           <div>
-            <span class="mono-label">Role</span>
-            <strong>Backend Developer</strong>
+            <span class="mono-label">Experience</span>
+            <strong>1 Year</strong>
           </div>
           <div>
-            <span class="mono-label">Stack</span>
-            <strong>Node.js · TypeScript · Redis · Kafka · RabbitMQ · MongoDB · PostgreSQL · Docker · Kubernetes · AWS</strong>
+            <span class="mono-label">Primary Stack</span>
+            <strong>Node.js · TypeScript · Redis · Kafka · RabbitMQ · MongoDB · PostgreSQL</strong>
           </div>
           <div>
             <span class="mono-label">Focus</span>
-            <strong>Distributed Systems • AI Infrastructure • Realtime Platforms</strong>
+            <strong>Backend Infrastructure • Distributed Systems • AI Platforms</strong>
           </div>
         </div>
       </div>
@@ -125,6 +125,11 @@
                 <li>File editing</li>
                 <li>Sub-agent orchestration</li>
               </ul>
+              <dl class="project-meta">
+                <div><dt>Category</dt><dd>Developer Tooling</dd></div>
+                <div><dt>Architecture</dt><dd>AI Agent Loop</dd></div>
+                <div><dt>Language</dt><dd>TypeScript</dd></div>
+              </dl>
             </div>
             <a href="https://github.com/vansh-choudhary01/tui-claude-code" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -133,7 +138,7 @@
             <div class="project-index">02</div>
             <div>
               <h3>DeployForge</h3>
-              <p>A deployment platform that transforms GitHub repositories into production-ready services through distributed workers, Docker build pipelines, and AWS infrastructure.</p>
+              <p>Transforms GitHub repositories into production deployments through distributed workers, Docker build pipelines, and AWS infrastructure.</p>
               <ul>
                 <li>Docker build pipeline</li>
                 <li>Distributed deployment workers</li>
@@ -142,6 +147,11 @@
                 <li>Redis Pub/Sub</li>
                 <li>RabbitMQ orchestration</li>
               </ul>
+              <dl class="project-meta">
+                <div><dt>Architecture</dt><dd>Distributed Workers</dd></div>
+                <div><dt>Cloud</dt><dd>AWS</dd></div>
+                <div><dt>Language</dt><dd>TypeScript</dd></div>
+              </dl>
             </div>
             <a href="https://github.com/vansh-choudhary01/DeployForge" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -150,7 +160,7 @@
             <div class="project-index">03</div>
             <div>
               <h3>DebugPilot</h3>
-              <p>An AI-powered observability platform that detects production incidents, retrieves service-aware code and historical failures, and generates asynchronous root-cause analysis through an event-driven architecture.</p>
+              <p>An AI-powered observability platform that correlates production logs, service metrics, deployments, and repository code to generate asynchronous root-cause analysis.</p>
               <ul>
                 <li>Event-driven incident processing</li>
                 <li>Asynchronous BullMQ RCA workers</li>
@@ -159,6 +169,11 @@
                 <li>Incident fingerprinting &amp; memory</li>
                 <li>Service metrics &amp; deployment correlation</li>
               </ul>
+              <dl class="project-meta">
+                <div><dt>Architecture</dt><dd>Event-Driven</dd></div>
+                <div><dt>Domain</dt><dd>AI Observability</dd></div>
+                <div><dt>Language</dt><dd>TypeScript</dd></div>
+              </dl>
             </div>
             <a href="https://github.com/vansh-choudhary01/DebugPilot-Incident-Intelligence-" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -176,6 +191,11 @@
                 <li>Session-aware runtime</li>
                 <li>Secure tool execution</li>
               </ul>
+              <dl class="project-meta">
+                <div><dt>Infrastructure</dt><dd>Kubernetes</dd></div>
+                <div><dt>Domain</dt><dd>Secure Execution</dd></div>
+                <div><dt>Language</dt><dd>TypeScript</dd></div>
+              </dl>
             </div>
             <a href="https://github.com/vansh-choudhary01/pi-sandbox-k8s" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -184,7 +204,7 @@
             <div class="project-index">05</div>
             <div>
               <h3>RAG Optimization</h3>
-              <p>A modular Retrieval-Augmented Generation pipeline focused on improving retrieval quality through advanced chunking, embeddings, and query optimization.</p>
+              <p>A modular Retrieval-Augmented Generation pipeline implementing advanced chunking, embeddings, and retrieval optimization for higher-quality LLM responses.</p>
               <ul>
                 <li>Semantic &amp; adaptive chunking</li>
                 <li>Query transformation</li>
@@ -193,6 +213,11 @@
                 <li>Retrieval evaluation</li>
                 <li>Modular RAG architecture</li>
               </ul>
+              <dl class="project-meta">
+                <div><dt>Domain</dt><dd>AI Infrastructure</dd></div>
+                <div><dt>Category</dt><dd>Retrieval Pipeline</dd></div>
+                <div><dt>Language</dt><dd>TypeScript</dd></div>
+              </dl>
             </div>
             <a href="https://github.com/vansh-choudhary01/RAG-Optimization" target="_blank" rel="noreferrer">Repository</a>
           </article>
@@ -212,7 +237,7 @@
           </div>
           <div>
             <h3>Backend</h3>
-            <p>Node.js, Express.js, REST APIs, BullMQ</p>
+            <p>Node.js, Express.js, REST APIs, Background Job Processing</p>
           </div>
           <div>
             <h3>Databases</h3>
@@ -243,8 +268,7 @@
     <section class="folio-row contact-row" id="contact" aria-labelledby="contact-title">
       <aside class="margin-note">04 / contact</aside>
       <div class="content-column">
-        <p class="section-label">Let's Build</p>
-        <h2 id="contact-title">Interested in backend engineering opportunities focused on AI infrastructure, distributed systems, and developer platforms.</h2>
+        <p class="section-label">Find me online</p>
         <div class="contact-table">
           <a href="https://github.com/vansh-choudhary01" target="_blank" rel="noreferrer">
             <span>GitHub</span>

@@ -30,10 +30,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   background:
@@ -323,7 +319,7 @@ p {
 
 .fact-strip div,
 .experience-rule div {
-  padding: 18px 16px 16px 0;
+  padding: 18px 16px 16px 16px;
   border-right: 1px solid var(--line);
 }
 
@@ -413,6 +409,37 @@ dd {
   font-size: 11px;
 }
 
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 24px;
+  margin: 14px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.project-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.project-meta dt {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-meta dd {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
 .skill-register {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -437,52 +464,6 @@ dd {
 .skill-register p {
   margin: 0;
   color: var(--ink);
-}
-
-blockquote {
-  max-width: 710px;
-  margin: 34px 0;
-  padding: 0 0 0 24px;
-  border-left: 2px solid var(--accent);
-  color: var(--ink);
-  font-size: clamp(1.25rem, 2vw, 1.75rem);
-  line-height: 1.35;
-}
-
-.writing-list {
-  margin: 34px 0 0;
-  padding: 0;
-  border-top: 1px solid var(--ink);
-  list-style: none;
-  counter-reset: writing;
-}
-
-.writing-list li {
-  display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 18px;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--line);
-  counter-increment: writing;
-}
-
-.writing-list li::before {
-  content: counter(writing, decimal-leading-zero);
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 11px;
-}
-
-.writing-list span,
-.writing-list small {
-  display: block;
-}
-
-.writing-list small {
-  margin-top: 4px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 11px;
 }
 
 .contact-table {
@@ -560,27 +541,6 @@ blockquote {
   font-size: 11px;
 }
 
-.principles-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 34px;
-  border-top: 1px solid var(--ink);
-  border-left: 1px solid var(--line);
-}
-
-.principles-grid div {
-  padding: 20px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-
-.principles-grid p {
-  margin: 6px 0 0;
-  font-size: 0.93rem;
-  color: var(--muted);
-  color: color-mix(in srgb, var(--ink), var(--muted) 18%);
-}
-
 @media (max-width: 860px) {
   :root {
     --margin: 0px;
@@ -626,8 +586,7 @@ blockquote {
   .experience-rule,
   .split-copy,
   .skill-register,
-  .contact-table,
-  .principles-grid {
+  .contact-table {
     grid-template-columns: 1fr;
   }
 

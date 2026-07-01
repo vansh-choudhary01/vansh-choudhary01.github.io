@@ -2,8 +2,40 @@
 const root = document.documentElement;
 const navLinks = Array.from(document.querySelectorAll(".nav-links a"));
 const sections = navLinks
-  .map((link) => document.querySelector(link.getAttribute("href")))
+  .map((link) => document.getElementById(link.dataset.target))
   .filter(Boolean);
+
+function smoothScrollTo(targetY, duration = 700) {
+  const startY = window.scrollY;
+  const diff = targetY - startY;
+  let startTime = null;
+
+  function easeInOut(t) {
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+  }
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    const elapsed = timestamp - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    window.scrollTo(0, startY + diff * easeInOut(progress));
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const id = link.dataset.target;
+    const target = document.getElementById(id);
+    if (!target) return;
+    const top = target.getBoundingClientRect().top + window.scrollY - 80;
+    smoothScrollTo(top);
+  });
+});
+
 
 const savedTheme = localStorage.getItem("portfolio-theme");
 if (savedTheme) {
@@ -37,7 +69,7 @@ const sectionObserver = new IntersectionObserver(
     if (!visible) return;
 
     navLinks.forEach((link) => {
-      link.classList.toggle("is-active", link.getAttribute("href") === `#${visible.target.id}`);
+      link.classList.toggle("is-active", link.dataset.target === visible.target.id);
     });
   },
   {
