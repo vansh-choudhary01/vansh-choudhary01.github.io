@@ -511,6 +511,147 @@ dd {
   font-size: 11px;
 }
 
+/* Hire me */
+.availability {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink);
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #2f9e5b;
+  box-shadow: 0 0 0 4px rgba(47, 158, 91, 0.18);
+  flex: none;
+}
+
+.service-ledger {
+  margin-top: 34px;
+  border-top: 1px solid var(--ink);
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 120px;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.service-item p {
+  margin-bottom: 10px;
+}
+
+.service-proof {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.service-proof a {
+  color: #4a90b8;
+}
+
+.service-price {
+  margin: 0;
+  text-align: right;
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.service-price span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 34px 0 30px;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.process-steps li {
+  padding: 16px 14px;
+  border-right: 1px solid var(--line);
+  font-size: 0.92rem;
+  line-height: 1.4;
+}
+
+.process-steps li:last-child {
+  border-right: 0;
+}
+
+.process-steps span {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 14px 22px;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--paper);
+  font-family: var(--mono);
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cta-button:hover {
+  background: transparent;
+  color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .service-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .service-price {
+    text-align: left;
+  }
+
+  .service-price br {
+    display: none;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-steps li:nth-child(2) {
+    border-right: 0;
+  }
+
+  .process-steps li:nth-child(-n+2) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media print {
+  .cta-button {
+    display: none;
+  }
+}
+
 @media (max-width: 860px) {
   :root {
     --margin: 0px;
